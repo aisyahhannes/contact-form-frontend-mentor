@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --light_green: #dff1e7;
+    --medium_green: #0c7d69;
+    --red: #d73c3c;
+    --white: #ffffff;
+    --medium_grey: #87a3a6;
+    --dark_grey: #2b4246;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light_green);
+    font-family: 'Karla';
+}
+
+main {
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+article {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: var(--dark_grey);
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: var(--dark_grey);
+    margin: 0;
+}
+
+/* Specific classes and inputs */
+
+.name {
+    display: flex;
+    gap: 20px;
+}
+
+.first, .last {
+    flex: 1;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--medium_grey);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+.general:hover, .support:hover,
+textarea:hover,
+textarea:focus {
+    border: 1px solid var(--medium_green);
+    outline: none;
+    cursor: pointer;
+}
+
+.radio {
+    display: flex;
+    gap: 20px;
+}
+
+.general, .support {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--medium_grey);
+    border-radius: 5px;
+    gap: 20px;
+    align-content: stretch;
+}
+
+textarea {
+    border: 1px solid var(--medium_grey);
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    resize: vertical;
+}
+
+.consent {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--medium_green);
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+    color: var(--red);
+}
+
+#alert {
+    position: absolute;
+    top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--dark_grey);
+    color: var(--white);
+}
+
+#alert div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#alert img {
+    width: 13px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+h5 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+}

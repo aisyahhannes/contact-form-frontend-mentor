@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <main>
+    <h1>Contact Us</h1>
+    <form>
+      <article class="name">
+        <div class="first">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name">
+          <p id="error-first"></p>
+        </div>
+        <div class="last">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name">
+          <p id="error-last"></p>
+        </div>
+      </article>
+
+      <article class="email">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email">
+        <p id="error-email"></p>
+      </article>
+
+      <article class="query">
+        <label for="type">Query Type *</label>
+        <div class="radio">
+          <div class="general">
+            <input type="radio" id="general" name="type" value="General Enquiry">General Enquiry
+          </div>
+          <div class="support">
+            <input type="radio" id="support" name="type" value="Support Request">Support Request
+          </div>
+        </div>
+        <p id="error-query"></p>
+      </article>
+
+      <article class="message">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" min="1" max="50"></textarea>
+        <p id="error-message"></p>
+      </article>
+
+      <article>
+        <div class="consent">
+          <input type="checkbox" id="consent" name="consent" value="consent">I consent to being contacted by the team *
+        </div>
+        <p id="error-consent"></p>
+      </article>
+
+      <article>
+        <input type="button" value="Submit" onclick="main()">
+      </article>
+    </form>
+  </main>
+  <div id="alert">
+    <div>
+      <img src="assets/images/icon-success-check.svg" alt="Icon success">
+      <h4>Message Sent!</h4>
+    </div>
+    <h5>Thanks for completing the form. We'll be in touch soon!</h5>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
