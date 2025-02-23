@@ -34,10 +34,12 @@
         <label for="type">Query Type *</label>
         <div class="radio">
           <div class="general">
-            <input type="radio" id="general" name="type" value="General Enquiry">General Enquiry
+            <input type="radio" id="general" name="type" value="General Enquiry" onchange="queryColor();">
+            <p>General Enquiry</p>
           </div>
           <div class="support">
-            <input type="radio" id="support" name="type" value="Support Request">Support Request
+            <input type="radio" id="support" name="type" value="Support Request" onchange="queryColor();">
+            <p>Support Request</p>
           </div>
         </div>
         <p id="error-query"></p>
@@ -51,13 +53,14 @@
 
       <article>
         <div class="consent">
-          <input type="checkbox" id="consent" name="consent" value="consent">I consent to being contacted by the team *
+          <input type="checkbox" id="consent" name="consent" value="consent">
+          <p>I consent to being contacted by the team *</p>
         </div>
         <p id="error-consent"></p>
       </article>
 
       <article>
-        <input type="button" value="Submit" onclick="main()">
+        <input type="button" value="Submit" onclick="main();">
       </article>
     </form>
   </main>
