@@ -30,6 +30,27 @@ Users should be able to:
 
 ### What I learned
 
+```css
+/* Removing default browser styling using appearance: none; */
+input[type="radio"] {
+    appearance: none;
+    background-image: url(assets/images/icon-radio-selected.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 14px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-image: url(assets/images/icon-checkbox-check.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 13px;
+}
+```
+
 ```js
 // Using forEach to loop through multiple elements  
 function highlightSelectedQuery() {  
